@@ -118,3 +118,4 @@ dmypy.json
 .pyre/
 .vscode/settings.json
 src/table.html
+src/.vscode/settings.json
