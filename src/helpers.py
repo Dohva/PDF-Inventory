@@ -1,3 +1,4 @@
+#src/helpers.py
 from book import Book
 import pandas as pd
 import os
@@ -9,8 +10,8 @@ def GetBooksFromDir(path, exts, prefixPath = None):
         prefixPath = path
     for entry in os.listdir(path):
         item = os.path.join(path, entry)
-        ext = os.path.splitext(item)[1]
         if os.path.isfile(item):
+            ext = os.path.splitext(item)[1]
             if ext in exts:
                 book = Book(item, prefixPath)
                 books.append(book)

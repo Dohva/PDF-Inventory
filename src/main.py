@@ -1,3 +1,4 @@
+# src/main.py
 from sitegenerator import SiteGenerator as Page
 from book import Book
 from config import Config
